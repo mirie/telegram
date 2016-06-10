@@ -61,7 +61,7 @@ app.post('/sms', function (req, res){
   })
     .then(function (result) {
       const twiml = new twilio.TwimlResponse()
-      twiml.message('Your jam is on the way!')
+      twiml.message('Your jam is on the way! Pick up the phone when I call!')
       res.send(twiml.toString())
     })
     .catch(function (err) {
