@@ -55,7 +55,8 @@ app.post('/sms', function (req, res){
     from: '+13474640283',
     // using ngrok to map localhost:3000 to an accessible url.
     // start ngrok like this: ngrok http 3000
-    url: `http://ac449ddc.ngrok.io/song?q=${encodeURIComponent(body)}`,
+    // Need to determine a better way for this ngrok url.
+    url: `http://7f314499.ngrok.io/song?q=${encodeURIComponent(body)}`,
     method: 'GET'
   })
     .then(function (result) {
